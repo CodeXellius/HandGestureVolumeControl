@@ -4,15 +4,15 @@ Control your system volume using hand gestures with your webcam! This project us
 
 # Features
 
--Detects a single hand using your webcam.
+- Detects a single hand using your webcam.
 
--Maps the distance between thumb and index finger to system volume.
+- Maps the distance between thumb and index finger to system volume.
 
--Smooth volume control with adjustable smoothing factor.
+- Smooth volume control with adjustable smoothing factor.
 
--Real-time volume bar visualization on the screen.
+- Real-time volume bar visualization on the screen.
 
--Displays distance and volume percentage for easy monitoring.
+- Displays distance and volume percentage for easy monitoring.
 
 # Requirements
 
