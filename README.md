@@ -47,7 +47,7 @@ Create and activate a virtual environment (optional but recommended):
 
 python -m venv .venv
 
-For Windows: .\.venv\Scripts\Activate.ps1
+For Windows: .\\.venv\Scripts\Activate.ps1
 
 For macOS/Linux:  source .venv/bin/activate
 
