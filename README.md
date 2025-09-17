@@ -30,11 +30,10 @@ pycaw
 
 comtypes
 
-# Install dependencies via:
-
-- pip install -r requirements.txt
-
 # Setup
+Navigate to the folder where you want the project:
+
+- Example: cd "C:\Users\aadit\Desktop\AI Projects"
 
 Clone the repository:
 
@@ -47,9 +46,9 @@ Create and activate a virtual environment (optional but recommended):
 
 - python -m venv .venv
 
-For Windows: .\\.venv\Scripts\Activate.ps1
+- For Windows: .\\.venv\Scripts\Activate.ps1
 
-For macOS/Linux:  source .venv/bin/activate
+- For macOS/Linux:  source .venv/bin/activate
 
 
 Install dependencies:
