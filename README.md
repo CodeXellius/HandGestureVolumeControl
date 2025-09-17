@@ -33,7 +33,7 @@ comtypes
 # Setup
 Navigate to the folder where you want the project:
 
-- Example: cd "C:\Users\aadit\Desktop\AI Projects"
+- Example: cd "C:\Users\aaditya\Desktop\Projects"
 
 Clone the repository:
 
