@@ -1,93 +1,98 @@
 # Hand Gesture Volume Control
 
-Control your system volume using hand gestures with your webcam! This project uses MediaPipe to detect hand landmarks and PyCaw to control Windows audio volume based on the distance between your thumb and index finger.
+Control your Windows system volume using hand gestures detected by your webcam!  
+This project uses [MediaPipe](https://google.github.io/mediapipe/) for hand tracking and [PyCaw](https://github.com/AndreMiras/PyCaw) for audio control.
 
-# Features
+---
+
+## Features
 
 - Detects a single hand using your webcam.
-
 - Maps the distance between thumb and index finger to system volume.
-
 - Smooth volume control with adjustable smoothing factor.
-
-- Real-time volume bar visualization on the screen.
-
+- Real-time volume bar visualization.
 - Displays distance and volume percentage for easy monitoring.
 
-# Requirements
+---
 
-Python 3.11+
+## Requirements
 
-# Libraries:
+- **Python 3.11+**
+- **Windows OS** (PyCaw is Windows-only)
+- **Webcam**
 
-opencv-python
+### Python Libraries
 
-mediapipe
+- `opencv-python`
+- `mediapipe`
+- `numpy`
+- `pycaw`
+- `comtypes`
 
-numpy
+---
 
-pycaw
+## Setup
 
-comtypes
+1. **Navigate to your desired folder:**
+   ```powershell
+   cd "C:\Users\aaditya\Desktop\Projects"
+   ```
 
-# Setup
-Navigate to the folder where you want the project:
+2. **Clone the repository:**
+   ```bash
+   git clone https://github.com/CodeXellius/HandGestureVolumeControl.git
+   cd HandGestureVolumeControl
+   ```
 
-- Example: cd "C:\Users\aaditya\Desktop\Projects"
+3. **Create and activate a virtual environment (recommended):**
+   ```powershell
+   python -m venv .venv
+   .\.venv\Scripts\Activate.ps1   # Windows PowerShell
+   ```
+   ```bash
+   source .venv/bin/activate      # macOS/Linux (not supported by PyCaw)
+   ```
 
-Clone the repository:
+4. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-- git clone https://github.com/CodeXellius/HandGestureVolumeControl
+---
 
-- cd HandGestureVolumeControl
+## Usage
 
+1. **Run the program:**
+   ```bash
+   python hand_volume_control.py
+   ```
 
-Create and activate a virtual environment (optional but recommended):
+2. **Instructions:**
+   - Make sure your webcam is connected.
+   - Keep your hand visible in front of the camera.
+   - Move your thumb and index finger closer or farther apart to decrease or increase volume.
+   - Press `q` to quit the program.
 
-- python -m venv .venv
+---
 
-- For Windows: .\\.venv\Scripts\Activate.ps1
+## How It Works
 
-- For macOS/Linux:  source .venv/bin/activate
+- **Webcam Capture:** Captures frames from your webcam using OpenCV.
+- **Hand Detection:** MediaPipe identifies hand landmarks.
+- **Distance Calculation:** Calculates distance between thumb tip (landmark 4) and index tip (landmark 8).
+- **Volume Mapping:** Maps the distance to system volume using PyCaw.
+- **Visualization:** Displays a real-time volume bar and the numeric volume percentage.
 
+---
 
-Install dependencies:
+## Notes
 
-- pip install -r requirements.txt
+- Only works on **Windows** due to PyCaw dependency.
+- Adjust the `smoothness` variable in the code to change the volume smoothing factor.
+- Ensure good lighting for reliable hand detection.
 
+---
 
-# Run the program:
+## License
 
-- python hand_volume_control.py
-
-
-Make sure your webcam is connected.
-
-Keep your hand visible in front of the camera.
-
-Move your thumb and index finger closer or farther apart to decrease or increase volume.
-
-Press 'q' to quit the program.
-
-# How it Works
-
-Webcam Capture: Captures frames from your webcam using OpenCV.
-
-Hand Detection: MediaPipe identifies hand landmarks.
-
-Distance Calculation: Calculates distance between thumb tip (landmark 4) and index tip (landmark 8).
-
-Volume Mapping: Maps the distance to system volume using PyCaw.
-
-Visualization: Displays a real-time volume bar and the numeric volume percentage.
-
-# Notes
-
-Only works on Windows due to PyCaw dependency.
-
-Adjust the smoothness variable in the code to change the volume smoothing factor.
-
-Ensure good lighting for reliable hand detection.
-
-License
 MIT License © [AADITYA]
