@@ -39,6 +39,7 @@ pip install -r requirements.txt
 Clone the repository:
 
 git clone https://github.com/your-username/HandGestureVolumeControl.git
+
 cd HandGestureVolumeControl
 
 
