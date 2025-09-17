@@ -56,7 +56,6 @@ Install dependencies:
 
 pip install -r requirements.txt
 
-Usage
 
 # Run the program:
 
