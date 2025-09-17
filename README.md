@@ -38,14 +38,14 @@ pip install -r requirements.txt
 
 Clone the repository:
 
-git clone https://github.com/CodeXellius/HandGestureVolumeControl
+- git clone https://github.com/CodeXellius/HandGestureVolumeControl
 
-cd HandGestureVolumeControl
+- cd HandGestureVolumeControl
 
 
 Create and activate a virtual environment (optional but recommended):
 
-python -m venv .venv
+- python -m venv .venv
 
 For Windows: .\\.venv\Scripts\Activate.ps1
 
