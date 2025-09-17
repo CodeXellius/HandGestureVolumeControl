@@ -1,8 +1,8 @@
-Hand Gesture Volume Control
+# Hand Gesture Volume Control
 
 Control your system volume using hand gestures with your webcam! This project uses MediaPipe to detect hand landmarks and PyCaw to control Windows audio volume based on the distance between your thumb and index finger.
 
-Features
+# Features
 
 Detects a single hand using your webcam.
 
@@ -14,11 +14,11 @@ Real-time volume bar visualization on the screen.
 
 Displays distance and volume percentage for easy monitoring.
 
-Requirements
+# Requirements
 
 Python 3.11+
 
-Libraries:
+# Libraries:
 
 opencv-python
 
@@ -30,11 +30,11 @@ pycaw
 
 comtypes
 
-Install dependencies via:
+# Install dependencies via:
 
 pip install -r requirements.txt
 
-Setup
+# Setup
 
 Clone the repository:
 
@@ -45,9 +45,11 @@ cd HandGestureVolumeControl
 Create and activate a virtual environment (optional but recommended):
 
 python -m venv .venv
-# Windows
+
+Windows
 .\.venv\Scripts\Activate.ps1
-# macOS/Linux
+
+macOS/Linux
 source .venv/bin/activate
 
 
@@ -57,7 +59,7 @@ pip install -r requirements.txt
 
 Usage
 
-Run the program:
+# Run the program:
 
 python hand_volume_control.py
 
@@ -70,7 +72,7 @@ Move your thumb and index finger closer or farther apart to decrease or increase
 
 Press 'q' to quit the program.
 
-How it Works
+# How it Works
 
 Webcam Capture: Captures frames from your webcam using OpenCV.
 
@@ -82,7 +84,7 @@ Volume Mapping: Maps the distance to system volume using PyCaw.
 
 Visualization: Displays a real-time volume bar and the numeric volume percentage.
 
-Notes
+# Notes
 
 Only works on Windows due to PyCaw dependency.
 
