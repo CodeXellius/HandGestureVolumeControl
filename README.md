@@ -4,15 +4,15 @@ Control your system volume using hand gestures with your webcam! This project us
 
 # Features
 
-Detects a single hand using your webcam.
+-Detects a single hand using your webcam.
 
-Maps the distance between thumb and index finger to system volume.
+-Maps the distance between thumb and index finger to system volume.
 
-Smooth volume control with adjustable smoothing factor.
+-Smooth volume control with adjustable smoothing factor.
 
-Real-time volume bar visualization on the screen.
+-Real-time volume bar visualization on the screen.
 
-Displays distance and volume percentage for easy monitoring.
+-Displays distance and volume percentage for easy monitoring.
 
 # Requirements
 
@@ -32,7 +32,7 @@ comtypes
 
 # Install dependencies via:
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 # Setup
 
@@ -54,12 +54,12 @@ For macOS/Linux:  source .venv/bin/activate
 
 Install dependencies:
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 
 # Run the program:
 
-python hand_volume_control.py
+- python hand_volume_control.py
 
 
 Make sure your webcam is connected.
